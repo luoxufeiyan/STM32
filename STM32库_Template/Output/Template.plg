@@ -1,0 +1,14 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+F:\00-野火ISO 视频教程\0-基础入门篇\3、初识STM32库\Template\Project\RVMDK（uv4）\iSO-STM32.uvproj
+Project File Date:  10/02/2013
+
+<h2>Output:</h2>
+Build target 'Template'
+linking...
+Program Size: Code=480 RO-data=320 RW-data=0 ZI-data=1024  
+FromELF: creating hex file...
+"..\..\Output\Template.axf" - 0 Errors, 0 Warning(s).
