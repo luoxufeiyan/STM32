@@ -15,7 +15,11 @@
 #include "stm32f10x.h"
 #include "bsp_led.h"
 
-void Delay(__IO u32 nCount); 
+
+void Delay(__IO uint32_t nCount)	 //简单的延时函数
+{
+	for(; nCount != 0; nCount--);
+}
 
 /**
   * @brief  主函数
@@ -43,9 +47,4 @@ int main(void)
 		LED3( OFF );		  // 灭	   
 	}
 
-}
-
-void Delay(__IO uint32_t nCount)	 //简单的延时函数
-{
-	for(; nCount != 0; nCount--);
 }
