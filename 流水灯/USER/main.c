@@ -14,6 +14,9 @@
   
 #include "stm32f10x.h"
 #include "bsp_led.h"
+
+void Delay(__IO u32 nCount); 
+
 /**
   * @brief  Ö÷º¯Êý
   * @param  Î
