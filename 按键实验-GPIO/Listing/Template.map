@@ -83,13 +83,13 @@ Section Cross References
     main.o(i.main) refers to bsp_key.o(i.Key_GPIO_Config) for Key_GPIO_Config
     main.o(i.main) refers to stm32f10x_gpio.o(i.GPIO_ResetBits) for GPIO_ResetBits
     main.o(i.main) refers to bsp_key.o(i.Key_Scan) for Key_Scan
-    bsp_led.o(i.LED_GPIO_Config) refers to stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
-    bsp_led.o(i.LED_GPIO_Config) refers to stm32f10x_gpio.o(i.GPIO_Init) for GPIO_Init
-    bsp_led.o(i.LED_GPIO_Config) refers to stm32f10x_gpio.o(i.GPIO_SetBits) for GPIO_SetBits
     bsp_key.o(i.Key_GPIO_Config) refers to stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
     bsp_key.o(i.Key_GPIO_Config) refers to stm32f10x_gpio.o(i.GPIO_Init) for GPIO_Init
     bsp_key.o(i.Key_Scan) refers to stm32f10x_gpio.o(i.GPIO_ReadInputDataBit) for GPIO_ReadInputDataBit
     bsp_key.o(i.Key_Scan) refers to bsp_key.o(i.Delay) for Delay
+    bsp_led.o(i.LED_GPIO_Config) refers to stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    bsp_led.o(i.LED_GPIO_Config) refers to stm32f10x_gpio.o(i.GPIO_Init) for GPIO_Init
+    bsp_led.o(i.LED_GPIO_Config) refers to stm32f10x_gpio.o(i.GPIO_SetBits) for GPIO_SetBits
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
@@ -664,24 +664,24 @@ Image Symbol Table
     i.GPIO_SetBits                           0x080002d0   Section        0  stm32f10x_gpio.o(i.GPIO_SetBits)
     i.HardFault_Handler                      0x080002d4   Section        0  stm32f10x_it.o(i.HardFault_Handler)
     i.Key_GPIO_Config                        0x080002d8   Section        0  bsp_key.o(i.Key_GPIO_Config)
-    i.Key_Scan                               0x08000300   Section        0  bsp_key.o(i.Key_Scan)
-    i.LED_GPIO_Config                        0x0800033c   Section        0  bsp_led.o(i.LED_GPIO_Config)
-    i.MemManage_Handler                      0x0800039c   Section        0  stm32f10x_it.o(i.MemManage_Handler)
-    i.NMI_Handler                            0x080003a0   Section        0  stm32f10x_it.o(i.NMI_Handler)
-    i.PendSV_Handler                         0x080003a2   Section        0  stm32f10x_it.o(i.PendSV_Handler)
-    i.RCC_APB2PeriphClockCmd                 0x080003a4   Section        0  stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd)
-    i.SVC_Handler                            0x080003c4   Section        0  stm32f10x_it.o(i.SVC_Handler)
-    i.SetSysClock                            0x080003c6   Section        0  system_stm32f10x.o(i.SetSysClock)
-    SetSysClock                              0x080003c7   Thumb Code     8  system_stm32f10x.o(i.SetSysClock)
-    i.SetSysClockTo72                        0x080003d0   Section        0  system_stm32f10x.o(i.SetSysClockTo72)
-    SetSysClockTo72                          0x080003d1   Thumb Code   214  system_stm32f10x.o(i.SetSysClockTo72)
-    i.SysTick_Handler                        0x080004b0   Section        0  stm32f10x_it.o(i.SysTick_Handler)
-    i.SystemInit                             0x080004b4   Section        0  system_stm32f10x.o(i.SystemInit)
-    i.UsageFault_Handler                     0x08000514   Section        0  stm32f10x_it.o(i.UsageFault_Handler)
-    i.__scatterload_copy                     0x08000518   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x08000526   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x08000528   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i.main                                   0x08000538   Section        0  main.o(i.main)
+    i.Key_Scan                               0x0800030c   Section        0  bsp_key.o(i.Key_Scan)
+    i.LED_GPIO_Config                        0x0800034c   Section        0  bsp_led.o(i.LED_GPIO_Config)
+    i.MemManage_Handler                      0x080003ac   Section        0  stm32f10x_it.o(i.MemManage_Handler)
+    i.NMI_Handler                            0x080003b0   Section        0  stm32f10x_it.o(i.NMI_Handler)
+    i.PendSV_Handler                         0x080003b2   Section        0  stm32f10x_it.o(i.PendSV_Handler)
+    i.RCC_APB2PeriphClockCmd                 0x080003b4   Section        0  stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd)
+    i.SVC_Handler                            0x080003d4   Section        0  stm32f10x_it.o(i.SVC_Handler)
+    i.SetSysClock                            0x080003d6   Section        0  system_stm32f10x.o(i.SetSysClock)
+    SetSysClock                              0x080003d7   Thumb Code     8  system_stm32f10x.o(i.SetSysClock)
+    i.SetSysClockTo72                        0x080003e0   Section        0  system_stm32f10x.o(i.SetSysClockTo72)
+    SetSysClockTo72                          0x080003e1   Thumb Code   214  system_stm32f10x.o(i.SetSysClockTo72)
+    i.SysTick_Handler                        0x080004c0   Section        0  stm32f10x_it.o(i.SysTick_Handler)
+    i.SystemInit                             0x080004c4   Section        0  system_stm32f10x.o(i.SystemInit)
+    i.UsageFault_Handler                     0x08000524   Section        0  stm32f10x_it.o(i.UsageFault_Handler)
+    i.__scatterload_copy                     0x08000528   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08000536   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08000538   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.main                                   0x08000548   Section        0  main.o(i.main)
     STACK                                    0x20000000   Section     1024  startup_stm32f10x_hd.o(STACK)
 
     Global Symbols
@@ -777,23 +777,23 @@ Image Symbol Table
     GPIO_ResetBits                           0x080002cd   Thumb Code     4  stm32f10x_gpio.o(i.GPIO_ResetBits)
     GPIO_SetBits                             0x080002d1   Thumb Code     4  stm32f10x_gpio.o(i.GPIO_SetBits)
     HardFault_Handler                        0x080002d5   Thumb Code     4  stm32f10x_it.o(i.HardFault_Handler)
-    Key_GPIO_Config                          0x080002d9   Thumb Code    34  bsp_key.o(i.Key_GPIO_Config)
-    Key_Scan                                 0x08000301   Thumb Code    60  bsp_key.o(i.Key_Scan)
-    LED_GPIO_Config                          0x0800033d   Thumb Code    86  bsp_led.o(i.LED_GPIO_Config)
-    MemManage_Handler                        0x0800039d   Thumb Code     4  stm32f10x_it.o(i.MemManage_Handler)
-    NMI_Handler                              0x080003a1   Thumb Code     2  stm32f10x_it.o(i.NMI_Handler)
-    PendSV_Handler                           0x080003a3   Thumb Code     2  stm32f10x_it.o(i.PendSV_Handler)
-    RCC_APB2PeriphClockCmd                   0x080003a5   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd)
-    SVC_Handler                              0x080003c5   Thumb Code     2  stm32f10x_it.o(i.SVC_Handler)
-    SysTick_Handler                          0x080004b1   Thumb Code     2  stm32f10x_it.o(i.SysTick_Handler)
-    SystemInit                               0x080004b5   Thumb Code    78  system_stm32f10x.o(i.SystemInit)
-    UsageFault_Handler                       0x08000515   Thumb Code     4  stm32f10x_it.o(i.UsageFault_Handler)
-    __scatterload_copy                       0x08000519   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x08000527   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x08000529   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    main                                     0x08000539   Thumb Code    48  main.o(i.main)
-    Region$$Table$$Base                      0x08000570   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08000580   Number         0  anon$$obj.o(Region$$Table)
+    Key_GPIO_Config                          0x080002d9   Thumb Code    46  bsp_key.o(i.Key_GPIO_Config)
+    Key_Scan                                 0x0800030d   Thumb Code    64  bsp_key.o(i.Key_Scan)
+    LED_GPIO_Config                          0x0800034d   Thumb Code    86  bsp_led.o(i.LED_GPIO_Config)
+    MemManage_Handler                        0x080003ad   Thumb Code     4  stm32f10x_it.o(i.MemManage_Handler)
+    NMI_Handler                              0x080003b1   Thumb Code     2  stm32f10x_it.o(i.NMI_Handler)
+    PendSV_Handler                           0x080003b3   Thumb Code     2  stm32f10x_it.o(i.PendSV_Handler)
+    RCC_APB2PeriphClockCmd                   0x080003b5   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd)
+    SVC_Handler                              0x080003d5   Thumb Code     2  stm32f10x_it.o(i.SVC_Handler)
+    SysTick_Handler                          0x080004c1   Thumb Code     2  stm32f10x_it.o(i.SysTick_Handler)
+    SystemInit                               0x080004c5   Thumb Code    78  system_stm32f10x.o(i.SystemInit)
+    UsageFault_Handler                       0x08000525   Thumb Code     4  stm32f10x_it.o(i.UsageFault_Handler)
+    __scatterload_copy                       0x08000529   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08000537   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08000539   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    main                                     0x08000549   Thumb Code    86  main.o(i.main)
+    Region$$Table$$Base                      0x080005b0   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080005c0   Number         0  anon$$obj.o(Region$$Table)
     __initial_sp                             0x20000400   Data           0  startup_stm32f10x_hd.o(STACK)
 
 
@@ -804,9 +804,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000131
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00000580, Max: 0x00080000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000005c0, Max: 0x00080000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00000580, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x000005c0, Max: 0x00080000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -824,33 +824,33 @@ Memory Map of the image
     0x08000168   0x00000024   Code   RO         3247    .text               mc_w.l(init.o)
     0x0800018c   0x00000004   Code   RO         3126    i.BusFault_Handler  stm32f10x_it.o
     0x08000190   0x00000002   Code   RO         3127    i.DebugMon_Handler  stm32f10x_it.o
-    0x08000192   0x00000012   Code   RO         3204    i.Delay             bsp_key.o
+    0x08000192   0x00000012   Code   RO         3189    i.Delay             bsp_key.o
     0x080001a4   0x00000116   Code   RO         1292    i.GPIO_Init         stm32f10x_gpio.o
     0x080002ba   0x00000012   Code   RO         1296    i.GPIO_ReadInputDataBit  stm32f10x_gpio.o
     0x080002cc   0x00000004   Code   RO         1299    i.GPIO_ResetBits    stm32f10x_gpio.o
     0x080002d0   0x00000004   Code   RO         1300    i.GPIO_SetBits      stm32f10x_gpio.o
     0x080002d4   0x00000004   Code   RO         3128    i.HardFault_Handler  stm32f10x_it.o
-    0x080002d8   0x00000028   Code   RO         3205    i.Key_GPIO_Config   bsp_key.o
-    0x08000300   0x0000003c   Code   RO         3206    i.Key_Scan          bsp_key.o
-    0x0800033c   0x00000060   Code   RO         3189    i.LED_GPIO_Config   bsp_led.o
-    0x0800039c   0x00000004   Code   RO         3129    i.MemManage_Handler  stm32f10x_it.o
-    0x080003a0   0x00000002   Code   RO         3130    i.NMI_Handler       stm32f10x_it.o
-    0x080003a2   0x00000002   Code   RO         3131    i.PendSV_Handler    stm32f10x_it.o
-    0x080003a4   0x00000020   Code   RO         1710    i.RCC_APB2PeriphClockCmd  stm32f10x_rcc.o
-    0x080003c4   0x00000002   Code   RO         3132    i.SVC_Handler       stm32f10x_it.o
-    0x080003c6   0x00000008   Code   RO           24    i.SetSysClock       system_stm32f10x.o
-    0x080003ce   0x00000002   PAD
-    0x080003d0   0x000000e0   Code   RO           25    i.SetSysClockTo72   system_stm32f10x.o
-    0x080004b0   0x00000002   Code   RO         3133    i.SysTick_Handler   stm32f10x_it.o
-    0x080004b2   0x00000002   PAD
-    0x080004b4   0x00000060   Code   RO           27    i.SystemInit        system_stm32f10x.o
-    0x08000514   0x00000004   Code   RO         3134    i.UsageFault_Handler  stm32f10x_it.o
-    0x08000518   0x0000000e   Code   RO         3251    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08000526   0x00000002   Code   RO         3252    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08000528   0x0000000e   Code   RO         3253    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x08000536   0x00000002   PAD
-    0x08000538   0x00000038   Code   RO         3108    i.main              main.o
-    0x08000570   0x00000010   Data   RO         3249    Region$$Table       anon$$obj.o
+    0x080002d8   0x00000034   Code   RO         3190    i.Key_GPIO_Config   bsp_key.o
+    0x0800030c   0x00000040   Code   RO         3191    i.Key_Scan          bsp_key.o
+    0x0800034c   0x00000060   Code   RO         3215    i.LED_GPIO_Config   bsp_led.o
+    0x080003ac   0x00000004   Code   RO         3129    i.MemManage_Handler  stm32f10x_it.o
+    0x080003b0   0x00000002   Code   RO         3130    i.NMI_Handler       stm32f10x_it.o
+    0x080003b2   0x00000002   Code   RO         3131    i.PendSV_Handler    stm32f10x_it.o
+    0x080003b4   0x00000020   Code   RO         1710    i.RCC_APB2PeriphClockCmd  stm32f10x_rcc.o
+    0x080003d4   0x00000002   Code   RO         3132    i.SVC_Handler       stm32f10x_it.o
+    0x080003d6   0x00000008   Code   RO           24    i.SetSysClock       system_stm32f10x.o
+    0x080003de   0x00000002   PAD
+    0x080003e0   0x000000e0   Code   RO           25    i.SetSysClockTo72   system_stm32f10x.o
+    0x080004c0   0x00000002   Code   RO         3133    i.SysTick_Handler   stm32f10x_it.o
+    0x080004c2   0x00000002   PAD
+    0x080004c4   0x00000060   Code   RO           27    i.SystemInit        system_stm32f10x.o
+    0x08000524   0x00000004   Code   RO         3134    i.UsageFault_Handler  stm32f10x_it.o
+    0x08000528   0x0000000e   Code   RO         3251    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08000536   0x00000002   Code   RO         3252    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08000538   0x0000000e   Code   RO         3253    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08000546   0x00000002   PAD
+    0x08000548   0x00000068   Code   RO         3108    i.main              main.o
+    0x080005b0   0x00000010   Data   RO         3249    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000400, Max: 0x00010000, ABSOLUTE)
@@ -867,10 +867,10 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       118          6          0          0          0       1885   bsp_key.o
+       134          6          0          0          0       1893   bsp_key.o
         96         10          0          0          0        538   bsp_led.o
          0          0          0          0          0       4504   core_cm3.o
-        56          8          0          0          0        471   main.o
+       104         18          0          0          0        487   main.o
         36          8        304          0       1024        884   startup_stm32f10x_hd.o
        304          0          0          0          0       3752   stm32f10x_gpio.o
         26          0          0          0          0       4078   stm32f10x_it.o
@@ -878,7 +878,7 @@ Image component sizes
        328         28          0          0          0     213609   system_stm32f10x.o
 
     ----------------------------------------------------------------------
-      1000         66        320          0       1024     230314   Object Totals
+      1064         76        320          0       1024     230338   Object Totals
          0          0         16          0          0          0   (incl. Generated)
          4          0          0          0          0          0   (incl. Padding)
 
@@ -917,15 +917,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      1088         82        320          0       1024     229546   Grand Totals
-      1088         82        320          0       1024     229546   ELF Image Totals
-      1088         82        320          0          0          0   ROM Totals
+      1152         92        320          0       1024     229570   Grand Totals
+      1152         92        320          0       1024     229570   ELF Image Totals
+      1152         92        320          0          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 1408 (   1.38kB)
+    Total RO  Size (Code + RO Data)                 1472 (   1.44kB)
     Total RW  Size (RW Data + ZI Data)              1024 (   1.00kB)
-    Total ROM Size (Code + RO Data + RW Data)       1408 (   1.38kB)
+    Total ROM Size (Code + RO Data + RW Data)       1472 (   1.44kB)
 
 ==============================================================================
 

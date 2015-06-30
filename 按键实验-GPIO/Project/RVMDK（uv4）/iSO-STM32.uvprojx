@@ -592,6 +592,16 @@
               <FileType>5</FileType>
               <FilePath>..\..\User\stm32f10x_it.h</FilePath>
             </File>
+            <File>
+              <FileName>bsp_key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\USER\bsp_key.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\USER\bsp_led.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

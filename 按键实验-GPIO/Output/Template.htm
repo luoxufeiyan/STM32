@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\..\Output\Template.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\..\Output\Template.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050169: Last Updated: Tue Jun 30 11:13:32 2015
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050169: Last Updated: Tue Jun 30 14:27:32 2015
 <BR><P>
 <H3>Maximum Stack Usage =         32 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -341,7 +341,7 @@ Global Symbols
 <P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_it.o(i.HardFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
-<P><STRONG><a name="[4c]"></a>Key_GPIO_Config</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, bsp_key.o(i.Key_GPIO_Config))
+<P><STRONG><a name="[4c]"></a>Key_GPIO_Config</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, bsp_key.o(i.Key_GPIO_Config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Key_GPIO_Config &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
@@ -350,7 +350,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[4f]"></a>Key_Scan</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, bsp_key.o(i.Key_Scan))
+<P><STRONG><a name="[4f]"></a>Key_Scan</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, bsp_key.o(i.Key_Scan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Key_Scan &rArr; Delay
 </UL>
 <BR>[Calls]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
@@ -405,7 +405,7 @@ Global Symbols
 
 <P><STRONG><a name="[60]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = main &rArr; LED_GPIO_Config &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
