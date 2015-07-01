@@ -14,7 +14,7 @@ static void NVIC_Configuration(void)
   
   /* 配置中断源 */
   NVIC_InitStructure.NVIC_IRQChannel = EXTI0_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;//中断优先级
   NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure);
@@ -26,7 +26,7 @@ static void NVIC_Configuration(void)
   */
 void EXTI_PA0_Config(void)
 {
-	GPIO_InitTypeDef GPIO_InitStructure; 
+	GPIO_InitTypeDef GPIO_InitStructure;
 	EXTI_InitTypeDef EXTI_InitStructure;
 
 	/* config the extiline clock and AFIO clock */
@@ -59,13 +59,13 @@ void EXTI_P13_Config(void)
 	EXTI_InitTypeDef EXTI_InitStructure;
 
 	/* config the extiline clock and AFIO clock */
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_AFIO,ENABLE);
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC | RCC_APB2Periph_AFIO,ENABLE);
 												
 	/* config the NVIC */
 	NVIC_Configuration();
 
 	/* EXTI line gpio config*/	
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_13;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;	 // 上拉输入
   GPIO_Init(GPIOC, &GPIO_InitStructure);
 

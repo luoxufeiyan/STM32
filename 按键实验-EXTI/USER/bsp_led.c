@@ -28,7 +28,7 @@ void LED_GPIO_Config(void)
 		RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOB|RCC_APB2Periph_GPIOF, ENABLE); 
 
 		/*选择要控制的GPIOB引脚*/															   
-		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;	
+		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
 
 		/*设置引脚模式为通用推挽输出*/
 		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;   
@@ -37,7 +37,7 @@ void LED_GPIO_Config(void)
 		GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; 
 
 		/*调用库函数，初始化GPIOB0*/
-		GPIO_Init(GPIOB, &GPIO_InitStructure);	
+		GPIO_Init(GPIOB, &GPIO_InitStructure);
 		
 		/*选择要控制的GPIOF引脚*/
 		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_7;

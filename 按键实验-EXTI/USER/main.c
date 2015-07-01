@@ -37,9 +37,7 @@ int main(void)
 			EXTI_PA0_Config();
 			//EXTI_P13_Config();
 	
-  	  while(1)
-			{
-			}
+  	  //while(1);
 }
 
 /*********************************************END OF FILE**********************/

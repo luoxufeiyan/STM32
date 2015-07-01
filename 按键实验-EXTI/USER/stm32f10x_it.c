@@ -148,6 +148,16 @@ void EXTI0_IRQHandler(void)
 		EXTI_ClearITPendingBit(EXTI_Line0);     //清除中断标志位
 	}  
 }
+
+void EXTI0_IRQHandler2(void)
+{
+	if(EXTI_GetITStatus(EXTI_Line0) != RESET) //确保是否产生了EXTI Line中断
+	{
+		// LED1 取反		
+		LED2_TOGGLE;
+		EXTI_ClearITPendingBit(EXTI_Line0);     //清除中断标志位
+	}  
+}
 /******************************************************************************/
 /*                 STM32F10x Peripherals Interrupt Handlers                   */
 /*  Add here the Interrupt Handler for the used peripheral(s) (PPP), for the  */
