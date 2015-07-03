@@ -1,0 +1,14 @@
+..\..\output\bsp_ili9341_lcd.o: ..\..\User\Lcd\bsp_ili9341_lcd.c
+..\..\output\bsp_ili9341_lcd.o: ..\..\User\Lcd\bsp_ili9341_lcd.h
+..\..\output\bsp_ili9341_lcd.o: ..\..\Libraries\CMSIS\stm32f10x.h
+..\..\output\bsp_ili9341_lcd.o: ..\..\Libraries\CMSIS\core_cm3.h
+..\..\output\bsp_ili9341_lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\bsp_ili9341_lcd.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
+..\..\output\bsp_ili9341_lcd.o: ..\..\User\stm32f10x_conf.h
+..\..\output\bsp_ili9341_lcd.o: ..\..\Libraries\FWlib\inc\stm32f10x_fsmc.h
+..\..\output\bsp_ili9341_lcd.o: ..\..\Libraries\CMSIS\stm32f10x.h
+..\..\output\bsp_ili9341_lcd.o: ..\..\Libraries\FWlib\inc\stm32f10x_gpio.h
+..\..\output\bsp_ili9341_lcd.o: ..\..\Libraries\FWlib\inc\stm32f10x_rcc.h
+..\..\output\bsp_ili9341_lcd.o: ..\..\Libraries\FWlib\inc\stm32f10x_usart.h
+..\..\output\bsp_ili9341_lcd.o: ..\..\Libraries\FWlib\inc\misc.h
+..\..\output\bsp_ili9341_lcd.o: ..\..\User\Lcd\ascii.h
