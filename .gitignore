@@ -1,11 +1,15 @@
 # Projects up to date
-串口通信/
 工程样例/
-呼吸灯/
-流水灯/
-时钟/
-按键实验-EXTI/
 按键实验-GPIO/
+流水灯/
+按键实验-EXTI/
+串口通信/
+串口打印古诗/
+HelloWorld/
+呼吸灯/
+时钟/
+液晶显示古诗/
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
