@@ -11,5 +11,6 @@
 ..\..\output\main.o: ..\..\Libraries\FWlib\inc\misc.h
 ..\..\output\main.o: ..\..\User\usart\bsp_usart1.h
 ..\..\output\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\main.o: ..\..\User\bsp_ili9341_lcd.h
 ..\..\output\main.o: ..\..\User\bsp_key.h
 ..\..\output\main.o: ..\..\User\stm32f10x_it.h

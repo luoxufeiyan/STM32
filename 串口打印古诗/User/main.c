@@ -11,6 +11,7 @@
  
 #include "stm32f10x.h"
 #include "bsp_usart1.h"
+#include "bsp_ili9341_lcd.h"
 #include "bsp_key.h"
 #include "stm32f10x_it.h"
 
@@ -30,6 +31,7 @@ int main(void)
     USART1_Config();
 	NVIC_Configuration();
     while(1){
+        LCD_DispStr(5, 5, (uint8_t *)"饮湖上初晴后雨", RED);
         if((Key_Scan(GPIOA,GPIO_Pin_0)== KEY_ON)){
         printf("\r\n 水光潋滟晴方好, \r\n");
         }
