@@ -1,0 +1,13 @@
+..\..\output\diskio.o: ..\..\User\diskio.c
+..\..\output\diskio.o: ..\..\User\diskio.h
+..\..\output\diskio.o: ..\..\User\integer.h
+..\..\output\diskio.o: ..\..\Libraries\CMSIS\stm32f10x.h
+..\..\output\diskio.o: ..\..\Libraries\CMSIS\core_cm3.h
+..\..\output\diskio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\diskio.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
+..\..\output\diskio.o: ..\..\User\stm32f10x_conf.h
+..\..\output\diskio.o: ..\..\Libraries\FWlib\inc\stm32f10x_gpio.h
+..\..\output\diskio.o: ..\..\Libraries\CMSIS\stm32f10x.h
+..\..\output\diskio.o: ..\..\Libraries\FWlib\inc\stm32f10x_rcc.h
+..\..\output\diskio.o: ..\..\Libraries\FWlib\inc\stm32f10x_usart.h
+..\..\output\diskio.o: ..\..\Libraries\FWlib\inc\misc.h

@@ -28,7 +28,7 @@ int main(void)
 	Key_GPIO_Config();
 	LED2(ON);
 	LED1(ON);
-	while(1)
+    while(1)
 	{
 		if(Key_Scan(GPIOA,GPIO_Pin_0)== KEY_ON)
 			//GPIO_WriteBit(GPIOC,GPIO_Pin_3,(BitAction)((1-GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_3))));
