@@ -8,7 +8,7 @@ BYTE pColorData[960];					/* 一行真彩色数据缓存 320 * 3 = 960 */
 //tagRGBQUAD dataOfBmp[17*19];
 FATFS bmpfs[2]; 
 FIL bmpfsrc, bmpfdst; 
-FRESULT bmpres;
+//FRESULT bmpres;
 
 /* 如果不需要打印bmp相关的提示信息,将printf注释掉即可
  * 如要用printf()，需将串口驱动文件包含进来
@@ -89,9 +89,9 @@ void Lcd_show_bmp(unsigned short int x, unsigned short int y,unsigned char *pic_
 		showBmpHead(&bitHead);
 
 		/* 读取位图信息头信息 */
-		f_read(&bmpfsrc,&bitInfoHead,sizeof(BITMAPINFOHEADER),&read_num);        
+		f_read(&bmpfsrc,&bitInfoHead,sizeof(BITMAPINFOHEADER),&read_num);
 		showBmpInforHead(&bitInfoHead);
-	}    
+	}
 	else
 	{
 		BMP_DEBUG_PRINTF("open file failed!\r\n");
