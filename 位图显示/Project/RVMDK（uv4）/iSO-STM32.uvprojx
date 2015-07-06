@@ -139,7 +139,7 @@
           <Target>
             <UseTarget>1</UseTarget>
             <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
-            <RunToMain>1</RunToMain>
+            <RunToMain>0</RunToMain>
             <RestoreBreakpoints>1</RestoreBreakpoints>
             <RestoreWatchpoints>1</RestoreWatchpoints>
             <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
@@ -149,7 +149,7 @@
             <RestoreSysVw>1</RestoreSysVw>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>1</TargetSelection>
+          <TargetSelection>6</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -163,7 +163,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>BIN\UL2CM3.DLL</Driver>
+            <Driver>Segger\JL2CM3.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -173,11 +173,11 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>4096</DriverSelection>
+            <DriverSelection>4099</DriverSelection>
           </Flash1>
           <bUseTDR>0</bUseTDR>
-          <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3>"" ()</Flash3>
+          <Flash2>Segger\JL2CM3.dll</Flash2>
+          <Flash3></Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -621,6 +621,13 @@
         </Group>
         <Group>
           <GroupName>DOC</GroupName>
+          <Files>
+            <File>
+              <FileName>readme.txt</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Doc\readme.txt</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>ff9</GroupName>
