@@ -8,7 +8,7 @@ BYTE pColorData[960];					/* 一行真彩色数据缓存 320 * 3 = 960 */
 //tagRGBQUAD dataOfBmp[17*19];
 FATFS bmpfs[2]; 
 FIL bmpfsrc, bmpfdst; 
-//FRESULT bmpres;
+FRESULT bmpres;
 
 /* 如果不需要打印bmp相关的提示信息,将printf注释掉即可
  * 如要用printf()，需将串口驱动文件包含进来
@@ -23,7 +23,7 @@ static void showBmpHead(BITMAPFILEHEADER* pBmpHead)
     BMP_DEBUG_PRINTF("保留字:%d\r\n",(*pBmpHead).bfReserved1);
     BMP_DEBUG_PRINTF("保留字:%d\r\n",(*pBmpHead).bfReserved2);
     BMP_DEBUG_PRINTF("实际位图数据的偏移字节数:%d\r\n",(*pBmpHead).bfOffBits);
-		BMP_DEBUG_PRINTF("\r\n");	
+	BMP_DEBUG_PRINTF("\r\n");	
 }
 
 /* 打印BMP文件的头信息，用于调试 */
@@ -41,7 +41,7 @@ static void showBmpInforHead(tagBITMAPINFOHEADER* pBmpInforHead)
     BMP_DEBUG_PRINTF("Y方向分辨率:%d\r\n",(*pBmpInforHead).biYPelsPerMeter);
     BMP_DEBUG_PRINTF("使用的颜色数:%d\r\n",(*pBmpInforHead).biClrUsed);
     BMP_DEBUG_PRINTF("重要颜色数:%d\r\n",(*pBmpInforHead).biClrImportant);
-		BMP_DEBUG_PRINTF("\r\n");
+	BMP_DEBUG_PRINTF("\r\n");
 }
 
 /*
@@ -64,7 +64,7 @@ void Lcd_show_bmp(unsigned short int x, unsigned short int y,unsigned char *pic_
 
 	f_mount(0, &bmpfs[0]);
 	BMP_DEBUG_PRINTF("file mount ok \r\n");    
-	bmpres = f_open( &bmpfsrc , (char *)tmp_name, FA_OPEN_EXISTING | FA_READ);	
+	bmpres = f_open( &bmpfsrc , (char *)tmp_name, FA_OPEN_EXISTING | FA_READ);
 /*-------------------------------------------------------------------------------------------------------*/
 	if(bmpres == FR_OK)
 	{
@@ -152,12 +152,3 @@ void Lcd_show_bmp(unsigned short int x, unsigned short int y,unsigned char *pic_
 	}
 	f_close(&bmpfsrc);    
 }
-
-
-
-
-
-
-
-
-
