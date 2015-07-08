@@ -1,9 +1,9 @@
 /**
   ******************************************************************************
   * @file    bsp_led.c
-  * @author  fire
+  * @author  fire & LXFY
   * @version V1.0
-  * @date    2013-xx-xx
+  * @date    2015-07-08
   * @brief   led应用函数接口
   ******************************************************************************
   */
@@ -24,7 +24,7 @@ void LED_GPIO_Config(void)
 		RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOB|RCC_APB2Periph_GPIOF, ENABLE); 
 
 		/*选择要控制的GPIOB引脚*/															   
-		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;	
+		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
 
 		/*设置引脚模式为通用推挽输出*/
 		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;   

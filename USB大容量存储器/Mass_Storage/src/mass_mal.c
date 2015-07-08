@@ -40,7 +40,7 @@ uint32_t Mass_Memory_Size[2];
 uint32_t Mass_Block_Size[2];
 uint32_t Mass_Block_Count[2];
 __IO uint32_t Status = 0;
-extern SD_CardInfo SDCardInfo;	  //用于存储卡的信息
+extern SD_CardInfo SDCardInfo;	  //用于存储卡的信息 
 
 //SD_CardInfo mSDCardInfo;
 
@@ -138,7 +138,6 @@ uint16_t MAL_Read(uint8_t lun, uint32_t Memory_Offset, uint32_t *Readbuff, uint1
   }
   return MAL_OK;
 }
-
 /*******************************************************************************
 * Function Name  : MAL_GetStatus
 * Description    : Get status
@@ -199,4 +198,3 @@ uint16_t MAL_GetStatus (uint8_t lun)
 }
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
-

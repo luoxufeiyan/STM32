@@ -50,7 +50,7 @@ DEVICE_PROP *pProperty;
 uint16_t	SaveState ;
 uint16_t  wInterrupt_Mask;
 DEVICE_INFO	Device_Info;
-USER_STANDARD_REQUESTS  *pUser_Standard_Requests;
+USER_STANDARD_REQUESTS  *pUser_Standard_Requests; //回调函数机制
 
 /* Extern variables ----------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
