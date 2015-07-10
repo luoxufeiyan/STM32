@@ -128,23 +128,23 @@ void Lcd_show_bmp(unsigned short int x, unsigned short int y,unsigned char *pic_
 				{                
 					f_read(&bmpfsrc,pColorData+j,1,&read_num);
 				}            
-			#elif 1				
+			#elif 1	
 				f_read(&bmpfsrc,pColorData,l_width/2,&read_num);
 				f_read(&bmpfsrc,pColorData+l_width/2,l_width/2,&read_num);
 			#else
 				f_read(&bmpfsrc,pColorData,l_width,&read_num);
 			#endif
 
-			for(j=0; j<width; j++) 											   //一行有效信息
+			for(j=0; j<width; j++) 											    //一行有效信息
 			{
-				k = j*3;																	 //一行中第K个像素的起点
+				k = j*3;									                    //一行中第K个像素的起点
 				red = pColorData[k+2];
 				green = pColorData[k+1];
 				blue = 	pColorData[k];
 				LCD_WR_Data(RGB24TORGB16(red,green,blue)); //写入LCD-GRAM
 			}            
-		}        	 																					     
-	}    
+		}								     
+	}
 	else 
 	{        
 		BMP_DEBUG_PRINTF("SORRY, THIS PIC IS NOT A 24BITS REAL COLOR");

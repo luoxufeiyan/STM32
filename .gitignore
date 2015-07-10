@@ -9,7 +9,9 @@ HelloWorld/
 呼吸灯/
 时钟/
 液晶显示古诗/
-
+位图显示/
+FATFS文件系统/
+USB大容量存储器/
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

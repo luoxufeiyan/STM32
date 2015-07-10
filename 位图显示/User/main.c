@@ -24,7 +24,7 @@ int main(void)
 		//printf("\r\n USART testing...... \r\n");
 	
 		LCD_Init();	
-		LCD_Clear(0, 0, 240, 320, BACKGROUND);		
+		LCD_Clear(0, 0, 240, 320, BACKGROUND);
 		
 		/* 初始化sd卡文件系统，因为汉字的字库放在了sd卡里面 */
 		Sd_fs_init();	
