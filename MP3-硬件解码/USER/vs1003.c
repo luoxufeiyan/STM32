@@ -94,7 +94,7 @@ u8 VS1003_WriteByte( u8 byte )
   SPI_I2S_SendData(SPI2, byte);											                // 发送8位数据
   while(SPI_I2S_GetFlagStatus(SPI2, SPI_I2S_FLAG_RXNE) == RESET);	  // 判断是否接收缓冲区非空
   return SPI_I2S_ReceiveData(SPI2);
-} 
+}
 
 /*
  * 函数名：VS1003_ReadByte
