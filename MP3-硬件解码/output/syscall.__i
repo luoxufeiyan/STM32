@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\USER -I..\FWlib\inc -I..\CMSIS -I..\ff9 -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\ST\STM32F10x" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\output\syscall.o" --omf_browse "..\output\syscall.crf" --depend "..\output\syscall.d" "..\ff9\option\syscall.c"
