@@ -477,7 +477,7 @@ int Touch_Calibrate(void)
     {
       LCD_DispStr(90, 110, (uint8_t *)"Calibrate failed", BLUE);
       LCD_DispStr(90, 130, (uint8_t *)"You need to calibrate it again.", BLUE);     
-      Delay_ms(4000);
+      Delay_ms(2000);
       return 1;
     }    
     

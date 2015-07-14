@@ -1,11 +1,16 @@
 A simple Paint
 ======
+<li>Feature</li>
+<li>Todo</li>
+<li>Bugs</li>
 
 Feature
 ======
 Auto calibrate screen when start.
+
 draws fast and accumulate.
-Save my paint as bmp file.
+
+Save your paint as bmp file.
 
 Todo
 ======
