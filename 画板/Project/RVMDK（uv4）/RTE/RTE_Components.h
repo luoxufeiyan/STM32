@@ -4,7 +4,7 @@
  *      *** Do not modify ! ***
  *
  * Project: 'iSO-STM32' 
- * Target:  'Òº¾§´¥Ãþ' 
+ * Target:  '»­°å' 
  */
 
 #ifndef RTE_COMPONENTS_H

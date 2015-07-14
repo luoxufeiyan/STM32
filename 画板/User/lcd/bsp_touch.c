@@ -521,17 +521,18 @@ void Palette_Init(void)
   LCD_Clear(0, 29, 40, 1, WHITE);
   LCD_DispStr(5, 10, (uint8_t *)"CLEAR", BLUE);
   
-  LCD_Clear(0, 30, 40, 30, GREEN);
+  LCD_Clear(0, 30, 40, 30, BLACK);
+  LCD_DispStr(5, 40, (uint8_t *)"SAVE", BLUE);
   LCD_Clear(0, 60, 40, 30, BLUE);
   LCD_Clear(0, 90, 40, 30, BRED);
   LCD_Clear(0, 120, 40, 30, GRED);
   LCD_Clear(0, 150, 40, 30, GBLUE);
-  LCD_Clear(0, 180, 40, 30, BLACK);
+  LCD_Clear(0, 180, 40, 30, GREEN);
   LCD_Clear(0, 210, 40, 30, RED);  
 	//显示初始信息
 	LCD_DispStr(60, 90, (uint8_t *)"Welcome to paint.", BLUE);
-	LCD_DispStr(60, 110, (uint8_t *)"Fell free to draw whatever you want.", BLUE);
-	LCD_DispStr(60, 130, (uint8_t *)"Simplely click on palette to select colors", BLUE);
+	LCD_DispStr(60, 110, (uint8_t *)"Simplely click on palette to select colors", BLUE);
+	LCD_DispStr(60, 130, (uint8_t *)"Dont draw any stroke while saving.", BLUE);
 	LCD_DispStr(60, 150, (uint8_t *)"Lovely made by LXFY.", BLUE);  
   Delay_ms(500);
 }
@@ -590,15 +591,14 @@ void Palette_draw_point(uint16_t x, uint16_t y)
   /* 在画板内取色 */
   if( x<40 )
   {
-    if( y>30 )
-    Pen_color = (y_pos<60)?GREEN:\
-                (y_pos<90)?BLUE:\
+    if( y>60 )
+    Pen_color = (y_pos<90)?BLUE:\
                 (y_pos<120)?BRED:\
                 (y_pos<150)?GRED:\
                 (y_pos<180)?GBLUE:\
-                (y_pos<210)?BLACK:\
+                (y_pos<210)?GREEN:\
                 (y_pos<240)?RED:BLUE;
-    else
+    else if(y<30)
     {/* 清屏 */      
       #if 1
       LCD_Clear(40, 0, 280, 240, WHITE);
@@ -606,6 +606,14 @@ void Palette_draw_point(uint16_t x, uint16_t y)
       LCD_Clear(40, 0, 280, 240, WHITE);
       #endif
       return;
+    }
+    else
+    {//保存
+        LCD_DispStr(5, 40, (uint8_t *)"WAIT", BLUE);
+        Screen_shot(0,0,320,240,"/paint");
+        LCD_DispStr(5, 40, (uint8_t *)"DONE", BLUE);
+         Delay_ms(1000);
+        LCD_DispStr(5, 40, (uint8_t *)"SAVE", BLUE);
     }
   }
   else

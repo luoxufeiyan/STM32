@@ -31,6 +31,14 @@
 "..\..\output\bsp_systick.o"
 "..\..\output\bsp_gpio_spi.o"
 "..\..\output\bsp_touch.o"
+"..\..\output\bsp_sdfs_app.o"
+"..\..\output\bsp_bmp.o"
+"..\..\output\bsp_sdio_sdcard.o"
+"..\..\output\bsp_key.o"
+"..\..\output\bsp_led.o"
+"..\..\output\diskio.o"
+"..\..\output\ff.o"
+"..\..\output\cc936.o"
 --library_type=microlib --strict --scatter "..\..\Output\Template.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

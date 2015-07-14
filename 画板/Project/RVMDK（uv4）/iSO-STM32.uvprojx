@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>液晶触摸</TargetName>
+      <TargetName>画板</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <TargetOption>
@@ -352,7 +352,7 @@
             <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
-            <OneElfS>1</OneElfS>
+            <OneElfS>0</OneElfS>
             <Strict>0</Strict>
             <EnumInt>0</EnumInt>
             <PlainCh>0</PlainCh>
@@ -369,7 +369,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\Libraries\CMSIS;..\..\User;..\..\Libraries\FWlib\inc;..\..\User\Led;..\..\User\Lcd;..\..\User\SysTick</IncludePath>
+              <IncludePath>..\..\Libraries\CMSIS;..\..\User;..\..\Libraries\FWlib\inc;..\..\User\Led;..\..\User\Lcd;..\..\User\SysTick;..\..\User\sdcard;..\..\User\usart;..\..\User\touch;..\..\User\ff9;..\..\User\ff9\option</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -612,6 +612,66 @@
               <FileType>1</FileType>
               <FilePath>..\..\User\lcd\bsp_touch.c</FilePath>
             </File>
+            <File>
+              <FileName>bsp_sdfs_app.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\sdcard\bsp_sdfs_app.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_bmp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\sdcard\bsp_bmp.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_sdio_sdcard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\sdcard\bsp_sdio_sdcard.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_bmp.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\User\sdcard\bsp_bmp.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_sdio_sdcard.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\User\sdcard\bsp_sdio_sdcard.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_sdfs_app.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\User\sdcard\bsp_sdfs_app.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\bsp_key.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\bsp_led.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>ff9</GroupName>
+          <Files>
+            <File>
+              <FileName>diskio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\ff9\diskio.c</FilePath>
+            </File>
+            <File>
+              <FileName>ff.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\ff9\ff.c</FilePath>
+            </File>
+            <File>
+              <FileName>cc936.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\ff9\option\cc936.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -627,7 +687,7 @@
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="4.1.0" condition="CMSIS Core">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="4.3.0"/>
         <targetInfos>
-          <targetInfo name="液晶触摸"/>
+          <targetInfo name="画板"/>
         </targetInfos>
       </component>
     </components>

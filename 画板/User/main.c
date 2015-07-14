@@ -4,7 +4,7 @@
   * @author  fire & LXFY
   * @version V1.0
   * @date    2015-07-14
-  * @brief   液晶触摸画板实验
+  * @brief   液晶画板
   ******************************************************************************
   */ 
  
@@ -12,6 +12,13 @@
 #include "bsp_ili9341_lcd.h"
 #include "bsp_SysTick.h"
 #include "bsp_touch.h"
+#include "bsp_sdfs_app.h"
+#include "bsp_usart1.h"
+#include "bsp_led.h"
+#include "bsp_key.h"
+
+#define CLI() __set_PRIMASK(1)
+#define SEI() __set_PRIMASK(0)
 
 extern volatile unsigned char touch_flag;
 
@@ -22,7 +29,8 @@ extern volatile unsigned char touch_flag;
   */
 int main(void)
 {	
-	/* 系统定时器 1us 定时初始化 */
+  char name=0;
+    /* 系统定时器 1us 定时初始化 */
   SysTick_Init();
   
   LCD_Init();	
@@ -48,9 +56,9 @@ int main(void)
       /*获取点的坐标*/
       if(Get_touch_point(&display, Read_2046_2(), &touch_para ) !=DISABLE)      
       {					
-        Palette_draw_point(display.x,display.y);	 										
+        Palette_draw_point(display.x,display.y);	
       }
-    }		
+    }
   }
 }
 

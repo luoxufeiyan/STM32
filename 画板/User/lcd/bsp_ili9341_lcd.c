@@ -1,6 +1,6 @@
 #include "bsp_ili9341_lcd.h"
 #include "ascii.h"	
-
+#include "bsp_sdfs_app.h"
 #define DEBUG_DELAY()
 
 void Lcd_Delay(__IO uint32_t nCount)
@@ -377,7 +377,9 @@ void Lcd_GramScan( uint16_t option )
 	/* write gram start */
 	LCD_ILI9341_CMD(0x2C);
 }
-
+//以上为LCD 底层函数
+//===华丽的分割线=====
+//以下为LCD 应用函数
 void LCD_Clear(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint16_t color)
 {
 	uint32_t i = 0;
@@ -557,3 +559,5 @@ void LCD_DisNum(uint16_t x, uint16_t y, uint32_t num, uint16_t color)
 		num /= 10;
 	}	
 }
+
+
