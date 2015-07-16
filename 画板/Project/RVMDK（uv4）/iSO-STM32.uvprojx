@@ -349,7 +349,11 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
+<<<<<<< HEAD
             <Optim>4</Optim>
+=======
+            <Optim>1</Optim>
+>>>>>>> origin/master
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>0</OneElfS>
@@ -652,6 +656,7 @@
               <FileType>1</FileType>
               <FilePath>..\..\User\bsp_led.c</FilePath>
             </File>
+<<<<<<< HEAD
             <File>
               <FileName>bsp_i2c_ee.c</FileName>
               <FileType>1</FileType>
@@ -667,6 +672,8 @@
               <FileType>5</FileType>
               <FilePath>..\..\User\bsp_usart1.h</FilePath>
             </File>
+=======
+>>>>>>> origin/master
           </Files>
         </Group>
         <Group>
