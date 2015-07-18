@@ -652,6 +652,16 @@
               <FileType>1</FileType>
               <FilePath>..\..\User\bsp_led.c</FilePath>
             </File>
+            <File>
+              <FileName>bsp_spi_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\bsp_spi_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_spi_flash.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\User\bsp_spi_flash.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

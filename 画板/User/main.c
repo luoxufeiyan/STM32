@@ -9,10 +9,12 @@
   */ 
  
 #include "stm32f10x.h"
+#include "bsp_usart1.h"
 #include "bsp_ili9341_lcd.h"
 #include "bsp_SysTick.h"
 #include "bsp_touch.h"
 #include "bsp_sdfs_app.h"
+#include "bsp_spi_flash.h"
 #include "bsp_usart1.h"
 #include "bsp_led.h"
 #include "bsp_key.h"
@@ -29,23 +31,30 @@ extern volatile unsigned char touch_flag;
   */
 int main(void)
 {	
-  char name=0;
-    /* 系统定时器 1us 定时初始化 */
+  //char name=0;
+  uint8_t k;
+	
+  /* 系统定时器 1us 定时初始化 */
   SysTick_Init();
-  
   LCD_Init();	
   /* GRAM扫描方向为左下脚->右上角 */
   Lcd_GramScan(2);
   LCD_Clear(0, 0, 320, 240, BACKGROUND);
-  
-/*------------------------------------------------------------------------------------------------------*/
-  
-  /* 触摸屏IO和中断初始化 */
-  Touch_Init();
-  
-  /* 等待触摸屏校正完毕 */
-  while(Touch_Calibrate() !=0);
-  
+  /*------------------------------------------------------------------------------------------------------*/
+  		/* 初始化sd卡*/
+		Sd_fs_init();	
+		/* 初始化串口 */
+        //USART1_Config();
+        /* 触摸屏IO和中断初始化 */
+        Touch_Init();
+        /* 初始化外部FLASH */
+        SPI_FLASH_Init();
+/*==========================================初始化完毕=================================================*/
+//开始校对
+
+		while(Touch_Calibrate() !=0);
+		//#endif
+        
   /* 触摸取色板初始化 */
   Palette_Init();
   
@@ -55,7 +64,7 @@ int main(void)
     {
       /*获取点的坐标*/
       if(Get_touch_point(&display, Read_2046_2(), &touch_para ) !=DISABLE)      
-      {					
+      {	
         Palette_draw_point(display.x,display.y);	
       }
     }

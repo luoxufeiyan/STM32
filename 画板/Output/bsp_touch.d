@@ -8,13 +8,16 @@
 ..\..\output\bsp_touch.o: ..\..\Libraries\FWlib\inc\stm32f10x_dma.h
 ..\..\output\bsp_touch.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\bsp_touch.o: ..\..\Libraries\FWlib\inc\stm32f10x_exti.h
+..\..\output\bsp_touch.o: ..\..\Libraries\FWlib\inc\stm32f10x_flash.h
 ..\..\output\bsp_touch.o: ..\..\Libraries\FWlib\inc\stm32f10x_fsmc.h
 ..\..\output\bsp_touch.o: ..\..\Libraries\FWlib\inc\stm32f10x_gpio.h
 ..\..\output\bsp_touch.o: ..\..\Libraries\FWlib\inc\stm32f10x_i2c.h
 ..\..\output\bsp_touch.o: ..\..\Libraries\FWlib\inc\stm32f10x_rcc.h
 ..\..\output\bsp_touch.o: ..\..\Libraries\FWlib\inc\stm32f10x_sdio.h
+..\..\output\bsp_touch.o: ..\..\Libraries\FWlib\inc\stm32f10x_spi.h
 ..\..\output\bsp_touch.o: ..\..\Libraries\FWlib\inc\stm32f10x_usart.h
 ..\..\output\bsp_touch.o: ..\..\Libraries\FWlib\inc\misc.h
 ..\..\output\bsp_touch.o: ..\..\User\lcd\bsp_gpio_spi.h
 ..\..\output\bsp_touch.o: ..\..\User\lcd\bsp_ili9341_lcd.h
 ..\..\output\bsp_touch.o: ..\..\User\SysTick\bsp_SysTick.h
+..\..\output\bsp_touch.o: ..\..\User\bsp_spi_flash.h

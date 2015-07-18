@@ -8,11 +8,13 @@
 ..\..\output\bsp_sdfs_app.o: ..\..\Libraries\FWlib\inc\stm32f10x_dma.h
 ..\..\output\bsp_sdfs_app.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\bsp_sdfs_app.o: ..\..\Libraries\FWlib\inc\stm32f10x_exti.h
+..\..\output\bsp_sdfs_app.o: ..\..\Libraries\FWlib\inc\stm32f10x_flash.h
 ..\..\output\bsp_sdfs_app.o: ..\..\Libraries\FWlib\inc\stm32f10x_fsmc.h
 ..\..\output\bsp_sdfs_app.o: ..\..\Libraries\FWlib\inc\stm32f10x_gpio.h
 ..\..\output\bsp_sdfs_app.o: ..\..\Libraries\FWlib\inc\stm32f10x_i2c.h
 ..\..\output\bsp_sdfs_app.o: ..\..\Libraries\FWlib\inc\stm32f10x_rcc.h
 ..\..\output\bsp_sdfs_app.o: ..\..\Libraries\FWlib\inc\stm32f10x_sdio.h
+..\..\output\bsp_sdfs_app.o: ..\..\Libraries\FWlib\inc\stm32f10x_spi.h
 ..\..\output\bsp_sdfs_app.o: ..\..\Libraries\FWlib\inc\stm32f10x_usart.h
 ..\..\output\bsp_sdfs_app.o: ..\..\Libraries\FWlib\inc\misc.h
 ..\..\output\bsp_sdfs_app.o: ..\..\User\ff9\diskio.h
@@ -20,5 +22,5 @@
 ..\..\output\bsp_sdfs_app.o: ..\..\User\sdcard\bsp_sdio_sdcard.h
 ..\..\output\bsp_sdfs_app.o: ..\..\User\ff9\ff.h
 ..\..\output\bsp_sdfs_app.o: ..\..\User\ff9\ffconf.h
-..\..\output\bsp_sdfs_app.o: ..\..\User\usart\bsp_usart1.h
+..\..\output\bsp_sdfs_app.o: ..\..\User\bsp_usart1.h
 ..\..\output\bsp_sdfs_app.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

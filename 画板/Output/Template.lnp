@@ -36,6 +36,7 @@
 "..\..\output\bsp_sdio_sdcard.o"
 "..\..\output\bsp_key.o"
 "..\..\output\bsp_led.o"
+"..\..\output\bsp_spi_flash.o"
 "..\..\output\diskio.o"
 "..\..\output\ff.o"
 "..\..\output\cc936.o"
