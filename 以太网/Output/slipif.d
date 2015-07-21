@@ -1,0 +1,13 @@
+..\..\output\slipif.o: ..\..\LWIP\lwip-1.3.2\src\netif\slipif.c
+..\..\output\slipif.o: ..\..\LWIP\lwip-1.3.2\src\include\netif/slipif.h
+..\..\output\slipif.o: ..\..\LWIP\lwip-1.3.2\src\include\lwip/netif.h
+..\..\output\slipif.o: ..\..\LWIP\lwip-1.3.2\src\include\lwip/opt.h
+..\..\output\slipif.o: ..\..\LWIP\lwipopts.h
+..\..\output\slipif.o: ..\..\LWIP\lwip-1.3.2\src\include\lwip/debug.h
+..\..\output\slipif.o: ..\..\LWIP\lwip-1.3.2\src\include\lwip/arch.h
+..\..\output\slipif.o: ..\..\LWIP\arch/cc.h
+..\..\output\slipif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\slipif.o: ..\..\LWIP\lwip-1.3.2\src\include\lwip/err.h
+..\..\output\slipif.o: ..\..\LWIP\lwip-1.3.2\src\include\ipv4\lwip/ip_addr.h
+..\..\output\slipif.o: ..\..\LWIP\lwip-1.3.2\src\include\ipv4\lwip/inet.h
+..\..\output\slipif.o: ..\..\LWIP\lwip-1.3.2\src\include\lwip/pbuf.h
