@@ -37,10 +37,10 @@ void LED_GPIO_Config(void)
 		/*调用库函数，初始化GPIOF7*/
 		GPIO_Init(GPIOF, &GPIO_InitStructure);			  
 
-		/* 关闭所有led灯	*/
+		/* 关闭LED1	*/
 		GPIO_SetBits(GPIOB, GPIO_Pin_0);
 		
-		/* 关闭所有led灯	*/
+		/* 关闭LED2	*/
 		GPIO_SetBits(GPIOF, GPIO_Pin_7|GPIO_Pin_8);	 
 }
 

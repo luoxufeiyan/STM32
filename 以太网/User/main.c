@@ -41,7 +41,7 @@ int main(void)
 	SysTick_Init();		
 
 	/*初始化LED使用的端口*/
-	LED_GPIO_Config(); 
+	LED_GPIO_Config();
 	 
 	printf("\r\n*************STM32_enc8j60+lwip移植实验*************\r\n");
 	  
@@ -51,10 +51,11 @@ int main(void)
     printf("LWIP mounted.IP addr is\n");
     //printf("My IP:&s",ipaddr.addr);
 	/*初始化web server 显示网页程序*/
-	httpd_init();
+	
+    httpd_init();
   
   /* 初始化telnet   远程控制 程序 */   
-  CMD_init();                                       
+  CMD_init();
 
   /* Infinite loop */
   while ( 1 )

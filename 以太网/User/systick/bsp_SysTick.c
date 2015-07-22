@@ -35,9 +35,6 @@ void SysTick_Init(void)
 	SysTick->CTRL &= ~ SysTick_CTRL_ENABLE_Msk;
 }
 
-
-
-
 /*
  * 函数名：Delay_us
  * 描述  ：us延时程序,10us为一个单位
@@ -55,8 +52,8 @@ void Delay_us(__IO u32 nTime)
 	SysTick->CTRL |=  SysTick_CTRL_ENABLE_Msk;
 
 	while(TimingDelay != 0);
+    
 }
-
 
 /*
  * 函数名：TimingDelay_Decrement

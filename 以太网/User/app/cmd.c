@@ -38,7 +38,6 @@ struct r_ctrl r_msg;
 
 /* Private functions ---------------------------------------------------------*/
 
-
 /*
  * 函数名：CMD_recv
  * 描述  ：接收client端的数据
@@ -82,7 +81,6 @@ static err_t CMD_recv(void *arg, struct tcp_pcb *pcb, struct pbuf *p, err_t err)
       }
     } 
 
-
     if(done) 
     {
 		/*在windows下，回车等于 \r\n 在linux下，回车等于 \n */
@@ -93,10 +91,10 @@ static err_t CMD_recv(void *arg, struct tcp_pcb *pcb, struct pbuf *p, err_t err)
 	    {
 	      dat->length += 1; //linux 
         } 
-	    else if(dat->length+2 <= MAX_NAME_SIZE) 
+	    else if(dat->length+2 <= MAX_NAME_SIZE)
 	    {
-          dat->length += 2; //windows
-        } 
+          dat->length += 2; //Windows
+        }
 	    else 
 	    {
           dat->length = MAX_NAME_SIZE;	//达到最大值的情况
@@ -120,9 +118,9 @@ static err_t CMD_recv(void *arg, struct tcp_pcb *pcb, struct pbuf *p, err_t err)
 						 if(strcmp(r_msg.CMD,"LED1_ON")==0)	//分析命令，开灯
 						   {
 						   	 LED1(ON);
-						   	 tcp_write(pcb,STATUS_ON, strlen(STATUS_ON), 1);//控制成功	 
+						   	 tcp_write(pcb,STATUS_ON, strlen(STATUS_ON), 1);//控制成功
                  tcp_write(pcb,IN_CMD, strlen(IN_CMD), 1);	 //提示输入下一命令
-							  }
+                           }
 						 else if(strcmp(r_msg.CMD,"LED1_OFF")==0)	//分析命令，关灯
 						   {
 						   		LED1(OFF);
@@ -134,13 +132,11 @@ static err_t CMD_recv(void *arg, struct tcp_pcb *pcb, struct pbuf *p, err_t err)
 							tcp_write(pcb,CMD_ERR, strlen(CMD_ERR), 1);	 //命令错误
 							tcp_write(pcb,IN_CMD, strlen(IN_CMD), 1);	 //提示输入下一命令
 							}
-
 					 }
 				else if(strcmp(dat->bytes,"12356789")==0)//第一次输入密码，密码正确
 				   	{
 					strcpy(r_msg.PWD,dat->bytes);	 //复制密码
 					tcp_write(pcb,IN_CMD, strlen(IN_CMD), 1);	 //提示输入下一命令
-
 					}
 				else //密码错误
 				{	
@@ -179,9 +175,6 @@ static err_t CMD_recv(void *arg, struct tcp_pcb *pcb, struct pbuf *p, err_t err)
 
 }  
 
-
-
-
 /*
  * 函数名：CMD_accept
  * 描述  ：telnet连接建立后调用的回调函数
@@ -214,8 +207,7 @@ static err_t CMD_accept(void *arg, struct tcp_pcb *pcb, err_t err)
  */
 void CMD_init(void)
 {
-  struct tcp_pcb *pcb;		//定义一个tcp控制块            		
-  
+  struct tcp_pcb *pcb;		//定义一个tcp控制块  
   /* Create a new TCP control block  */
   pcb = tcp_new();	   		//给tcp控制块分配内存空间             		 	
 
@@ -231,7 +223,6 @@ void CMD_init(void)
   tcp_accept(pcb, CMD_accept);   	 //监听的端口接通后调用的函数HelloWorld_accept
 										
 }
-
 
   /*
  * 函数名：CMD_conn_err

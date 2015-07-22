@@ -379,6 +379,3 @@ u16 enc28j60PacketReceive(u16 maxlen, u8* packet)
    enc28j60WriteOp(ENC28J60_BIT_FIELD_SET, ECON2, ECON2_PKTDEC);
    return(len);
 }
-
-
-
