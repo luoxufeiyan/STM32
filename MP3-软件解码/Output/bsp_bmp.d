@@ -16,6 +16,7 @@
 ..\..\output\bsp_bmp.o: ..\..\Libraries\FWlib\inc\stm32f10x_dma.h
 ..\..\output\bsp_bmp.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\bsp_bmp.o: ..\..\Libraries\FWlib\inc\stm32f10x_exti.h
+..\..\output\bsp_bmp.o: ..\..\Libraries\FWlib\inc\stm32f10x_flash.h
 ..\..\output\bsp_bmp.o: ..\..\Libraries\FWlib\inc\stm32f10x_fsmc.h
 ..\..\output\bsp_bmp.o: ..\..\Libraries\FWlib\inc\stm32f10x_gpio.h
 ..\..\output\bsp_bmp.o: ..\..\Libraries\FWlib\inc\stm32f10x_rcc.h

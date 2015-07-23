@@ -1,0 +1,14 @@
+..\..\output\enc28j60.o: ..\..\User\enc28j60\ENC28J60.C
+..\..\output\enc28j60.o: ..\..\User\enc28j60\ENC28J60.H
+..\..\output\enc28j60.o: ..\..\Libraries\FWlib\inc\STM32F10X_GPIO.h
+..\..\output\enc28j60.o: ..\..\Libraries\CMSIS\stm32f10x.h
+..\..\output\enc28j60.o: ..\..\Libraries\CMSIS\core_cm3.h
+..\..\output\enc28j60.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\enc28j60.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
+..\..\output\enc28j60.o: ..\..\User\stm32f10x_conf.h
+..\..\output\enc28j60.o: ..\..\Libraries\FWlib\inc\stm32f10x_gpio.h
+..\..\output\enc28j60.o: ..\..\Libraries\FWlib\inc\stm32f10x_rcc.h
+..\..\output\enc28j60.o: ..\..\Libraries\CMSIS\stm32f10x.h
+..\..\output\enc28j60.o: ..\..\Libraries\FWlib\inc\stm32f10x_spi.h
+..\..\output\enc28j60.o: ..\..\Libraries\FWlib\inc\stm32f10x_usart.h
+..\..\output\enc28j60.o: ..\..\User\enc28j60\SPI.H

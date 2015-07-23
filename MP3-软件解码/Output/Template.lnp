@@ -35,11 +35,15 @@
 "..\..\output\bsp_spi_flash.o"
 "..\..\output\bsp_systick.o"
 "..\..\output\bsp_led.o"
+<<<<<<< HEAD:MP3-软件解码/Output/Template.lnp
 "..\..\output\bsp_gpio_spi.o"
 "..\..\output\bsp_touch.o"
 "..\..\output\mp3.o"
 "..\..\output\bsp_pcm1770.o"
 "..\..\output\bsp_iis.o"
+=======
+"..\..\output\bsp_spi_flash.o"
+>>>>>>> feature:画板/Output/Template.lnp
 "..\..\output\diskio.o"
 "..\..\output\ff.o"
 "..\..\output\cc936.o"

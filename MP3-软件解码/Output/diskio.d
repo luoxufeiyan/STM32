@@ -9,6 +9,7 @@
 ..\..\output\diskio.o: ..\..\Libraries\FWlib\inc\stm32f10x_dma.h
 ..\..\output\diskio.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\diskio.o: ..\..\Libraries\FWlib\inc\stm32f10x_exti.h
+..\..\output\diskio.o: ..\..\Libraries\FWlib\inc\stm32f10x_flash.h
 ..\..\output\diskio.o: ..\..\Libraries\FWlib\inc\stm32f10x_fsmc.h
 ..\..\output\diskio.o: ..\..\Libraries\FWlib\inc\stm32f10x_gpio.h
 ..\..\output\diskio.o: ..\..\Libraries\FWlib\inc\stm32f10x_rcc.h

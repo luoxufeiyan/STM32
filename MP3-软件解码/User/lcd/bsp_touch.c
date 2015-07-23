@@ -505,7 +505,7 @@ int Touch_Calibrate(void)
         ScreenSample[i].y= Ptr->y;
 
     }
-		/* 用原始参数计算出 原始参数与坐标的转换系数。 */
+		/* 用原始参数计算出 原始参数与坐标的转换系数。 */ 
     Cal_touch_para( &DisplaySample[0],&ScreenSample[0],&touch_para ) ;  	   
     
 		/*取一个点计算X值*/

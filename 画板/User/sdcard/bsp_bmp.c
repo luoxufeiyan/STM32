@@ -254,13 +254,13 @@ int Screen_shot(unsigned short int x,\
 		bmpres = f_write(&bmpfsrc, header,sizeof(unsigned char)*54, &mybw);		
 		
 		/* 下面是将指定窗口的数据读出来写到文件里面去 */
-		for(i=0; i<Height; i++)					
+		for(i=0; i<Height; i++)
 		{
 			if( !(Width%4) )				/* 刚好是4字节对齐 */
 			{
-				for(j=0; j<Width; j++)  
+				for(j=0; j<Width; j++)
 				{					
-					read_data = LCD_GetPoint(y+j, Height-i+x);				
+					read_data = LCD_GetPoint(y+j, Height-i+x);
 					
 					r =  GETR_FROM_RGB16(read_data);
 					g =  GETG_FROM_RGB16(read_data);
@@ -304,8 +304,3 @@ int Screen_shot(unsigned short int x,\
 }
 
 /* -------------------------------------end of file--------------------------------- */
-
-
-
-
-
